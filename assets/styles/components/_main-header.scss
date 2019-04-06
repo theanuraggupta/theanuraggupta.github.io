@@ -1,0 +1,50 @@
+.navbar-dark {
+  background: transparent;
+  display: flex;
+  a {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+  }
+
+  .navbar-brand {
+    font-size: 12px;
+    font-weight: 600;
+    color: $base;
+    margin: 0 auto;
+    transition: all 0.5s;
+    &:hover{
+      color: $navbar-link-hover;
+      transition: all 0.5s;
+      // @include linear-gradient($navbar-link-hover, $green);
+    }
+  }
+
+  .nav-link {
+    color: $base !important;
+    margin: 0 10px;
+    display: inline-block;
+    &:focus,
+    &:hover {
+      color: rgba(255,255,255,.75);
+    }
+  }
+  
+  .nav-link:hover::after {
+      width: 100%;
+  }
+
+  .nav-link::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(to right, $navbar-link-hover 1%, $navbar-link-hover 10%, $white 45% , $white 50%, $white 55%, $green 90%, $green 100%);
+      transition: width 0.3s;
+  }
+
+}
+
+ul.ml-auto {
+  margin: 8px;
+}
