@@ -2,7 +2,6 @@ html, body {
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    overflow-x: hidden;
 }
 
 body {
@@ -57,7 +56,7 @@ h1{
 
 .left{
     text-align: left;
-    padding-top: 40%;
+    padding-top: 30%;
 }
 
 // a {
@@ -130,9 +129,9 @@ h1{
 }
 
 .fadeIn {
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 1s;
     -webkit-animation-fill-mode: both;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-fill-mode: both ;
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
@@ -144,5 +143,5 @@ h1, h2, h3, h4, h5, h6{
 
 .abouthighlight {
     font-weight: 600;
-    color: #fff;
+    color: $base;
 }
