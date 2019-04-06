@@ -74,7 +74,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<main-header></main-header>\r\n<div id=\"main\">\r\n    <router-outlet></router-outlet>\r\n</div>\r\n<nav class=\"navbar fixed-bottom navbar-expand-lg fadeInDown navbar-dark\">\r\n    <div class=\"collapse navbar-collapse\" id=\"navbarTogglerDemo01\">\r\n        <ul class=\"navbar-nav\">\r\n            <li class=\"nav-item active hidden-lg\">\r\n                <a class=\"nav-link\" target=\"_blank\" href=\"https://github.com/anurag01gupta\">Projects</a>\r\n            </li>\r\n            <li class=\"nav-item active hidden-lg\">\r\n                <a class=\"nav-link\" routerLink=\"/about\" routerLinkActive=\"active\">About</a>\r\n            </li>\r\n            <li class=\"nav-item active hidden-lg\">\r\n                <a class=\"nav-link\" href=\"mailto:email@anuraggupta.in?Subject=Hello%20Anurag\">Email</a>\r\n            </li>\r\n            <li class=\"nav-item active hidden-sm\">\r\n                <a class=\"nav-link\" target=\"_blank\" href=\"https://www.instagram.com/anurag01gupta/\">Instagram</a>\r\n            </li>\r\n            <li class=\"nav-item active hidden-sm\">\r\n                <a class=\"nav-link\" target=\"_blank\" href=\"https://www.linkedin.com/in/anurag-in-india/\">LinkedIn</a>\r\n            </li>\r\n            <li class=\"nav-item active hidden-sm\">\r\n                <a class=\"nav-link\" href=\"mailto:email@anuraggupta.in?Subject=Hello%20Anurag\">Email</a>\r\n            </li>\r\n        </ul>\r\n    </div>\r\n</nav>\r\n\r\n  \r\n"
+module.exports = "<main-header></main-header>\r\n<div id=\"main\">\r\n    <router-outlet></router-outlet>\r\n</div>\r\n<nav class=\"navbar fixed-bottom navbar-expand-lg fadeInUp navbar-dark\">\r\n    <div class=\"collapse navbar-collapse\" id=\"navbarTogglerDemo01\">\r\n        <ul class=\"navbar-nav\">\r\n            <li class=\"nav-item active hidden-lg\">\r\n                <a class=\"nav-link\" target=\"_blank\" href=\"https://github.com/anurag01gupta\">Projects</a>\r\n            </li>\r\n            <li class=\"nav-item active hidden-lg\">\r\n                <a class=\"nav-link\" routerLink=\"/about\" routerLinkActive=\"active\">About</a>\r\n            </li>\r\n            <li class=\"nav-item active hidden-lg\">\r\n                <a class=\"nav-link\" href=\"mailto:email@anuraggupta.in?Subject=Hello%20Anurag\">Email</a>\r\n            </li>\r\n            <li class=\"nav-item active hidden-sm\">\r\n                <a class=\"nav-link\" target=\"_blank\" href=\"https://www.instagram.com/anurag01gupta/\">Instagram</a>\r\n            </li>\r\n            <li class=\"nav-item active hidden-sm\">\r\n                <a class=\"nav-link\" target=\"_blank\" href=\"https://www.linkedin.com/in/anurag-in-india/\">LinkedIn</a>\r\n            </li>\r\n            <li class=\"nav-item active hidden-sm\">\r\n                <a class=\"nav-link\" href=\"mailto:email@anuraggupta.in?Subject=Hello%20Anurag\">Email</a>\r\n            </li>\r\n        </ul>\r\n    </div>\r\n</nav>\r\n\r\n  \r\n"
 
 /***/ }),
 
@@ -212,18 +212,7 @@ var AboutComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container animated fadeIn animated.delay-1s vertical-center\">\r\n  <div class=\"justify-content-center align-items-center\">\r\n    <div class=\"col-md\">\r\n      <h1 class=\"left\">\r\n        <span class=\"highlight\">Hello,</span>\r\n        I'm a web\r\n        <br>\r\n        developer based in Bengaluru.\r\n      </h1>\r\n    </div>\r\n  </div>\r\n</div>"
-
-/***/ }),
-
-/***/ "./src/app/component/home/home.component.scss":
-/*!****************************************************!*\
-  !*** ./src/app/component/home/home.component.scss ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudC9ob21lL2hvbWUuY29tcG9uZW50LnNjc3MifQ== */"
+module.exports = "<div class=\"container animated fadeIn animated.delay-1s vertical-center\">\r\n  <div class=\"justify-content-center align-items-center\">\r\n    <div class=\"col-md\">\r\n      <h1 class=\"left\">\r\n        <span class=\"highlight\">Hello,</span>\r\n        I'm a web\r\n        <br>\r\n        developer based in Bengaluru.\r\n      </h1>\r\n      <h3>Currently I'm working full time, however, I'm open for freelance work.</h3>\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -249,8 +238,7 @@ var HomeComponent = /** @class */ (function () {
     HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-home',
-            template: __webpack_require__(/*! ./home.component.html */ "./src/app/component/home/home.component.html"),
-            styles: [__webpack_require__(/*! ./home.component.scss */ "./src/app/component/home/home.component.scss")]
+            template: __webpack_require__(/*! ./home.component.html */ "./src/app/component/home/home.component.html")
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], HomeComponent);
