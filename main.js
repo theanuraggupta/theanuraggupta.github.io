@@ -127,6 +127,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _component_home_home_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./component/home/home.component */ "./src/app/component/home/home.component.ts");
 /* harmony import */ var _component_main_header_main_header_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./component/main-header/main-header.component */ "./src/app/component/main-header/main-header.component.ts");
 /* harmony import */ var _component_about_about_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./component/about/about.component */ "./src/app/component/about/about.component.ts");
+/* harmony import */ var _services_app_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./services/app.service */ "./src/app/services/app.service.ts");
+
 
 
 
@@ -150,7 +152,7 @@ var AppModule = /** @class */ (function () {
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"]
             ],
-            providers: [],
+            providers: [_services_app_service__WEBPACK_IMPORTED_MODULE_8__["AppService"]],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
         })
     ], AppModule);
@@ -168,7 +170,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container about fadeIn\">\r\n  <div class=\"row top-buffer\">\r\n    <div class=\"col-md-6\">\r\n      <h4><em>Hello there,</em> my name is</h4>\r\n      <h2>Anurag Gupta</h2>\r\n      <p>I’m a 26 year old enthusiastic UI developer with <span class=\"abouthighlight\">three and half years of IT experience.</span>&nbsp;Specialising in web design, front end code and frameworks of javascripts.</p>\r\n      <p>Over the years I have found a new love for anything digital and making technology easy to use and accessible to everyone (feels good to do good).</p>\r\n      <p>Feel free to <a class=\"highlight\" href=\"mailto:email@anuraggupta.in?Subject=Hello%20Anurag\">contact</a> me here.</p>\r\n    </div>\r\n    <div class=\"col-md-5 offset-1\">\r\n      \r\n    </div>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"container about fadeIn\">\r\n  <div class=\"row top-buffer\">\r\n    <div class=\"col-md-6\" [innerHtml]=\"aboutHtml\"></div>\r\n    <div class=\"col-md-5 offset-1\">\r\n      <!--Image Section  -->\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -184,19 +186,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AboutComponent", function() { return AboutComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_app_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/app.service */ "./src/app/services/app.service.ts");
+
 
 
 var AboutComponent = /** @class */ (function () {
-    function AboutComponent() {
+    function AboutComponent(appService) {
+        this.appService = appService;
     }
     AboutComponent.prototype.ngOnInit = function () {
+        this.aboutHtml = this.appService.getConstantData('about');
     };
     AboutComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-about',
             template: __webpack_require__(/*! ./about.component.html */ "./src/app/component/about/about.component.html")
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_app_service__WEBPACK_IMPORTED_MODULE_2__["AppService"]])
     ], AboutComponent);
     return AboutComponent;
 }());
@@ -293,6 +299,58 @@ var MainHeaderComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/services/app.service.ts":
+/*!*****************************************!*\
+  !*** ./src/app/services/app.service.ts ***!
+  \*****************************************/
+/*! exports provided: AppService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppService", function() { return AppService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _assets_constants_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/constants/constants */ "./src/assets/constants/constants.ts");
+
+
+
+var AppService = /** @class */ (function () {
+    function AppService() {
+    }
+    AppService.prototype.getConstantData = function (key) {
+        return _assets_constants_constants__WEBPACK_IMPORTED_MODULE_2__["APPLICATION_CONSTANTS"][key];
+    };
+    AppService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], AppService);
+    return AppService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/assets/constants/constants.ts":
+/*!*******************************************!*\
+  !*** ./src/assets/constants/constants.ts ***!
+  \*******************************************/
+/*! exports provided: APPLICATION_CONSTANTS */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "APPLICATION_CONSTANTS", function() { return APPLICATION_CONSTANTS; });
+var APPLICATION_CONSTANTS = {
+    'about': "<h4><em>Hello there,</em> my name is</h4>\n    <h2>Anurag Gupta</h2>\n    <p>I\u2019m a 26 year old enthusiastic UI developer with <span class=\"abouthighlight\">three and half years of IT experience.</span>&nbsp;Specialising in web design, front end code and frameworks of javascripts.</p>\n    <p>Over the years, I have found a new curiosity for anything digital and making technology easy to use and accessible to everyone (feels good to do good).</p>\n    <p>Feel free to <a class=\"highlight\" href=\"mailto:email@anuraggupta.in?Subject=Hello%20Anurag\">contact</a> me here.</p>"
+};
+
+
+/***/ }),
+
 /***/ "./src/environments/environment.ts":
 /*!*****************************************!*\
   !*** ./src/environments/environment.ts ***!
@@ -354,7 +412,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\angupta\Documents\GitHub\my-world\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! F:\Workspace\Github\my-world\src\main.ts */"./src/main.ts");
 
 
 /***/ })
