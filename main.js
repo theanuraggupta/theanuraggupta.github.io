@@ -5,21 +5,33 @@
   !*** ./src/$$_lazy_route_resource lazy namespace object ***!
   \**********************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-function webpackEmptyAsyncContext(req) {
-	// Here Promise.resolve().then() is used instead of new Promise() to prevent
-	// uncaught exception popping up in devtools
-	return Promise.resolve().then(function() {
-		var e = new Error("Cannot find module '" + req + "'");
-		e.code = 'MODULE_NOT_FOUND';
-		throw e;
+var map = {
+	"./about/about.module": [
+		"./src/app/about/about.module.ts",
+		"about-about-module"
+	]
+};
+function webpackAsyncContext(req) {
+	var ids = map[req];
+	if(!ids) {
+		return Promise.resolve().then(function() {
+			var e = new Error("Cannot find module '" + req + "'");
+			e.code = 'MODULE_NOT_FOUND';
+			throw e;
+		});
+	}
+	return __webpack_require__.e(ids[1]).then(function() {
+		var id = ids[0];
+		return __webpack_require__(id);
 	});
 }
-webpackEmptyAsyncContext.keys = function() { return []; };
-webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
-module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
+webpackAsyncContext.keys = function webpackAsyncContextKeys() {
+	return Object.keys(map);
+};
+webpackAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
+module.exports = webpackAsyncContext;
 
 /***/ }),
 
@@ -36,19 +48,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _component_home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./component/home/home.component */ "./src/app/component/home/home.component.ts");
-/* harmony import */ var _component_about_about_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./component/about/about.component */ "./src/app/component/about/about.component.ts");
-
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 
 
 
 
 var routes = [
     {
-        path: '', redirectTo: '', component: _component_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"], pathMatch: 'full'
+        path: '', redirectTo: '', component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"], pathMatch: 'full'
     },
     {
-        path: 'about', component: _component_about_about_component__WEBPACK_IMPORTED_MODULE_4__["AboutComponent"]
+        path: 'about', loadChildren: './about/about.module#AboutModule'
     }
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -74,7 +84,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<main-header></main-header>\r\n<div id=\"main\">\r\n    <router-outlet></router-outlet>\r\n</div>\r\n<nav class=\"navbar fixed-bottom navbar-expand-lg fadeInUp navbar-dark\">\r\n    <div class=\"collapse navbar-collapse\" id=\"navbarTogglerDemo01\">\r\n        <ul class=\"navbar-nav\">\r\n            <!-- <li class=\"nav-item hidden-sm\">\r\n                <a class=\"nav-link\" href=\"mailto:email@anuraggupta.in?Subject=Hello%20Anurag\">Contact</a>\r\n            </li> -->\r\n            <li class=\"nav-item hidden-sm\">\r\n                <a class=\"nav-link\" target=\"_blank\" href=\"https://www.instagram.com/anurag01gupta/\">Instagram</a>\r\n            </li>\r\n            <li class=\"nav-item hidden-sm\">\r\n                <a class=\"nav-link\" target=\"_blank\" href=\"https://www.linkedin.com/in/anurag-in-india/\">LinkedIn</a>\r\n            </li>\r\n            <li class=\"nav-item active hidden-lg\">\r\n                <a class=\"nav-link\" target=\"_blank\" href=\"https://github.com/anurag01gupta\">Projects</a>\r\n            </li>\r\n            <li class=\"nav-item active hidden-lg\">\r\n                <a class=\"nav-link\" routerLink=\"/about\" routerLinkActive=\"active\">About</a>\r\n            </li>\r\n            <li class=\"nav-item active hidden-lg\">\r\n                <a class=\"nav-link\" href=\"mailto:email@anuraggupta.in?Subject=Hello%20Anurag\">Contact</a>\r\n            </li>\r\n        </ul>\r\n    </div>\r\n</nav>\r\n\r\n  \r\n"
+module.exports = "<main-header></main-header>\r\n<div id=\"main\">\r\n    <router-outlet></router-outlet>\r\n</div>\r\n<nav class=\"navbar fixed-bottom navbar-expand-lg fadeInUp navbar-dark\">\r\n    <div class=\"collapse navbar-collapse\" id=\"navbarTogglerDemo01\">\r\n        <ul class=\"navbar-nav\">\r\n            <!-- <li class=\"nav-item hidden-sm\">\r\n                <a class=\"nav-link\" href=\"mailto:email@anuraggupta.in?Subject=Hello%20Anurag\">Contact</a>\r\n            </li> -->\r\n            <li class=\"nav-item hidden-sm\">\r\n                <a class=\"nav-link\" target=\"_blank\" href=\"https://www.instagram.com/anurag_______gupta/\">Instagram</a>\r\n            </li>\r\n            <li class=\"nav-item hidden-sm\">\r\n                <a class=\"nav-link\" target=\"_blank\" href=\"https://www.linkedin.com/in/anurag-in-india/\">LinkedIn</a>\r\n            </li>\r\n            <li class=\"nav-item active hidden-lg\">\r\n                <a class=\"nav-link\" target=\"_blank\" href=\"https://github.com/thenanuraggupta\">Projects</a>\r\n            </li>\r\n            <li class=\"nav-item active hidden-lg\">\r\n                <a class=\"nav-link\" routerLink=\"/about\" routerLinkActive=\"active\">About</a>\r\n            </li>\r\n            <li class=\"nav-item active hidden-lg\">\r\n                <a class=\"nav-link\" href=\"mailto:email@anuraggupta.in?Subject=Hello%20Anurag\">Contact</a>\r\n            </li>\r\n        </ul>\r\n    </div>\r\n</nav>\r\n\r\n  \r\n"
 
 /***/ }),
 
@@ -94,7 +104,6 @@ __webpack_require__.r(__webpack_exports__);
 
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
-        this.title = 'my-world';
     }
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -124,10 +133,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _component_home_home_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./component/home/home.component */ "./src/app/component/home/home.component.ts");
-/* harmony import */ var _component_main_header_main_header_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./component/main-header/main-header.component */ "./src/app/component/main-header/main-header.component.ts");
-/* harmony import */ var _component_about_about_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./component/about/about.component */ "./src/app/component/about/about.component.ts");
-
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _main_header_main_header_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./main-header/main-header.component */ "./src/app/main-header/main-header.component.ts");
 
 
 
@@ -142,9 +149,8 @@ var AppModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-                _component_home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"],
-                _component_main_header_main_header_component__WEBPACK_IMPORTED_MODULE_6__["MainHeaderComponent"],
-                _component_about_about_component__WEBPACK_IMPORTED_MODULE_7__["AboutComponent"]
+                _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"],
+                _main_header_main_header_component__WEBPACK_IMPORTED_MODULE_6__["MainHeaderComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -161,65 +167,10 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/component/about/about.component.html":
-/*!******************************************************!*\
-  !*** ./src/app/component/about/about.component.html ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container about fadeIn\">\r\n  <div class=\"row top-buffer\">\r\n    <div class=\"col-md-6\">\r\n      <h4><em>Hello there,</em> my name is</h4>\r\n      <h2>Anurag Gupta</h2>\r\n      <p>I’m a 26 year old enthusiastic UI developer with <span class=\"abouthighlight\">three and half years of IT experience.</span>&nbsp;Specialising in web design, front end code and frameworks of javascripts.</p>\r\n      <p>Over the years I have found a new love for anything digital and making technology easy to use and accessible to everyone (feels good to do good).</p>\r\n      <p>Feel free to <a class=\"highlight\" href=\"mailto:email@anuraggupta.in?Subject=Hello%20Anurag\">contact</a> me here.</p>\r\n    </div>\r\n    <div class=\"col-md-5 offset-1\">\r\n      \r\n    </div>\r\n  </div>\r\n</div>"
-
-/***/ }),
-
-/***/ "./src/app/component/about/about.component.ts":
-/*!****************************************************!*\
-  !*** ./src/app/component/about/about.component.ts ***!
-  \****************************************************/
-/*! exports provided: AboutComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AboutComponent", function() { return AboutComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-
-
-var AboutComponent = /** @class */ (function () {
-    function AboutComponent() {
-    }
-    AboutComponent.prototype.ngOnInit = function () {
-    };
-    AboutComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-about',
-            template: __webpack_require__(/*! ./about.component.html */ "./src/app/component/about/about.component.html")
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
-    ], AboutComponent);
-    return AboutComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/component/home/home.component.html":
-/*!****************************************************!*\
-  !*** ./src/app/component/home/home.component.html ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container homepage animated fadeIn vertical-center\">\r\n  <div class=\"row justify-content-center align-items-center\">\r\n    <div class=\"col-md\">\r\n      <h1 class=\"left\">\r\n        <span class=\"highlight\">Hello,</span>\r\n        I'm a web\r\n        <br>\r\n        developer based in Bengaluru.\r\n      </h1>\r\n      <h3>Currently I'm working full time, however, I'm open for freelance work.</h3>\r\n      <a target=\"_blank\" href=\"https://github.com/anurag01gupta\">\r\n        <button class=\"btn btn-primary\" type=\"button\">\r\n          Explore Projects\r\n        </button>\r\n      </a>\r\n      <a href=\"mailto:email@anuraggupta.in?Subject=Hello%20Anurag\" class=\"hidden-sm\">\r\n        <button class=\"btn btn-secondary\" type=\"button\">\r\n          Contact Me\r\n        </button>\r\n      </a>\r\n    </div>\r\n  </div>\r\n</div>"
-
-/***/ }),
-
-/***/ "./src/app/component/home/home.component.ts":
-/*!**************************************************!*\
-  !*** ./src/app/component/home/home.component.ts ***!
-  \**************************************************/
+/***/ "./src/app/home/home.component.ts":
+/*!****************************************!*\
+  !*** ./src/app/home/home.component.ts ***!
+  \****************************************/
 /*! exports provided: HomeComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -238,7 +189,7 @@ var HomeComponent = /** @class */ (function () {
     HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-home',
-            template: __webpack_require__(/*! ./home.component.html */ "./src/app/component/home/home.component.html")
+            template: "<div class=\"container homepage animated fadeIn vertical-center\">\n              <div class=\"row justify-content-center align-items-center\">\n                <div class=\"col-md\">\n                  <h1 class=\"left\">\n                    <span class=\"highlight\">Hello,</span>\n                    I'm a web\n                    <br>\n                    developer based in Bengaluru.\n                  </h1>\n                  <h3>Currently I'm working full time, however, I'm open for freelance work.</h3>\n                  <a target=\"_blank\" href=\"https://github.com/theanuraggupta\">\n                    <button class=\"btn btn-primary\" type=\"button\">\n                      Explore Projects\n                    </button>\n                  </a>\n                  <a href=\"mailto:email@anuraggupta.in?Subject=Hello%20Anurag\" class=\"hidden-sm\">\n                    <button class=\"btn btn-secondary\" type=\"button\">\n                      Contact Me\n                    </button>\n                  </a>\n                </div>\n              </div>\n            </div>"
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], HomeComponent);
@@ -249,21 +200,21 @@ var HomeComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/component/main-header/main-header.component.html":
-/*!******************************************************************!*\
-  !*** ./src/app/component/main-header/main-header.component.html ***!
-  \******************************************************************/
+/***/ "./src/app/main-header/main-header.component.html":
+/*!********************************************************!*\
+  !*** ./src/app/main-header/main-header.component.html ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar fixed-top navbar-expand-lg animated fadeInDown navbar-dark\">\r\n  <a class=\"navbar-brand\" routerLink=\"/\">ANURAG GUPTA</a>\r\n  <!-- <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarTogglerDemo01\" aria-controls=\"navbarTogglerDemo01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button> -->\r\n  <div class=\"collapse navbar-collapse hidden-sm\" id=\"navbarTogglerDemo01\">\r\n    <ul class=\"navbar-nav ml-auto\">\r\n      <li class=\"nav-item active\">\r\n        <a class=\"nav-link\" target=\"_blank\" href=\"https://github.com/anurag01gupta\">Projects</a>\r\n      </li>\r\n      <li class=\"nav-item active\">\r\n        <a class=\"nav-link\" routerLink=\"/about\" routerLinkActive=\"active\">About</a>\r\n      </li>\r\n      <li class=\"nav-item active\">\r\n        <a class=\"nav-link\" href=\"mailto:email@anuraggupta.in?Subject=Hello%20Anurag\">Contact</a>\r\n      </li>\r\n    </ul>\r\n  </div>\r\n</nav>"
+module.exports = "<nav class=\"navbar fixed-top navbar-expand-lg animated fadeInDown navbar-dark\">\r\n  <a class=\"navbar-brand\" routerLink=\"/\">ANURAG GUPTA</a>\r\n  <!-- <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarTogglerDemo01\" aria-controls=\"navbarTogglerDemo01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button> -->\r\n  <div class=\"collapse navbar-collapse hidden-sm\" id=\"navbarTogglerDemo01\">\r\n    <ul class=\"navbar-nav ml-auto\">\r\n      <li class=\"nav-item active\">\r\n        <a class=\"nav-link\" target=\"_blank\" href=\"https://github.com/theanuraggupta\">Projects</a>\r\n      </li>\r\n      <li class=\"nav-item active\">\r\n        <a class=\"nav-link\" routerLink=\"/about\" routerLinkActive=\"active\">About</a>\r\n      </li>\r\n      <li class=\"nav-item active\">\r\n        <a class=\"nav-link\" href=\"mailto:email@anuraggupta.in?Subject=Hello%20Anurag\">Contact</a>\r\n      </li>\r\n    </ul>\r\n  </div>\r\n</nav>"
 
 /***/ }),
 
-/***/ "./src/app/component/main-header/main-header.component.ts":
-/*!****************************************************************!*\
-  !*** ./src/app/component/main-header/main-header.component.ts ***!
-  \****************************************************************/
+/***/ "./src/app/main-header/main-header.component.ts":
+/*!******************************************************!*\
+  !*** ./src/app/main-header/main-header.component.ts ***!
+  \******************************************************/
 /*! exports provided: MainHeaderComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -282,7 +233,7 @@ var MainHeaderComponent = /** @class */ (function () {
     MainHeaderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'main-header',
-            template: __webpack_require__(/*! ./main-header.component.html */ "./src/app/component/main-header/main-header.component.html")
+            template: __webpack_require__(/*! ./main-header.component.html */ "./src/app/main-header/main-header.component.html")
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], MainHeaderComponent);
@@ -354,7 +305,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\angupta\Documents\GitHub\my-world\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\Project\Github\Portfolio-in-development\src\main.ts */"./src/main.ts");
 
 
 /***/ })
