@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1558292286649,
+  "timestamp": 1561260876601,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
         "/es2015-polyfills.4a4cfea0ce682043f4e9.js",
         "/favicon.ico",
         "/index.html",
-        "/main.a036a0327f4c9174d23c.js",
+        "/main.c2e9a6335144097ba454.js",
         "/polyfills.407a467dedb63cfdd103.js",
         "/runtime.6d57e4070a52c8b09d36.js",
         "/scripts.bf8f92e2e60dbee00511.js",
-        "/styles.cd2a708160b8490e3a59.css"
+        "/styles.29f29562de7cabbf89de.css"
       ],
       "patterns": []
     },
@@ -27,14 +27,6 @@
       "updateMode": "prefetch",
       "urls": [
         "/assets/constants/constants.ts",
-        "/assets/icons/icon-128x128.png",
-        "/assets/icons/icon-144x144.png",
-        "/assets/icons/icon-152x152.png",
-        "/assets/icons/icon-192x192.png",
-        "/assets/icons/icon-384x384.png",
-        "/assets/icons/icon-512x512.png",
-        "/assets/icons/icon-72x72.png",
-        "/assets/icons/icon-96x96.png",
         "/assets/images/avatar.png",
         "/assets/styles/abstracts/_mixins.scss",
         "/assets/styles/abstracts/_variables.scss",
@@ -56,18 +48,10 @@
     "/5.d63badd35c75a6a299e4.js": "eaa3bd2a63888bfb9be389bfb9f92f5055cee41a",
     "/6.544ee26dbe303dffd9ad.js": "39a3dc8b50bc435396fcb5ea68607a5111c03e98",
     "/assets/constants/constants.ts": "5119e60c74196697c891841bcc1df1e377087672",
-    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/assets/images/avatar.png": "87c94eda954da92b1f571c87ff42df9d58b8dafc",
     "/assets/styles/abstracts/_mixins.scss": "9b7599b3ca9058a06fb535e3451c7deaab3d22c1",
     "/assets/styles/abstracts/_variables.scss": "89d92e1389a22f0399db1cf910813128e8f0def2",
-    "/assets/styles/base/_base.scss": "5fd8caf517b8616d9978db9862b11e854f322182",
+    "/assets/styles/base/_base.scss": "de2ac335d6127846d20e5a12be84743940a1ce89",
     "/assets/styles/common.scss": "a0faec3d64f5f1814261f4d973963c2068602028",
     "/assets/styles/components/_about.scss": "ddfc46682c91f0e82f799a3c8501af6a056f6c27",
     "/assets/styles/components/_main-header.scss": "6fa044d133be325aa4a8fb748d8e57fafca8a8ae",
@@ -78,12 +62,12 @@
     "/fontawesome-webfont.af7ae505a9eed503f8b8.woff2": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c",
     "/fontawesome-webfont.b06871f281fee6b241d6.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
     "/fontawesome-webfont.fee66e712a8a08eef580.woff": "28b782240b3e76db824e12c02754a9731a167527",
-    "/index.html": "83d6795188f7e7f15c6c7ae5d0b7a981431c22f6",
-    "/main.a036a0327f4c9174d23c.js": "6b61311e11029bbe4391111042db57ba4873443f",
+    "/index.html": "3a9b4f2290bb455c7a86bd34c426cb263209df90",
+    "/main.c2e9a6335144097ba454.js": "96d1787f0431bde1044dfd24eb4427e0a2295c71",
     "/polyfills.407a467dedb63cfdd103.js": "ffa449995bf2eba2ccd0a002417214f7eb75e7b5",
     "/runtime.6d57e4070a52c8b09d36.js": "294d1d7448fb6b6bf428eabf49f555e8bfc125a4",
     "/scripts.bf8f92e2e60dbee00511.js": "74d7796953f4b475d957e6e2bb7083f1b7fdc380",
-    "/styles.cd2a708160b8490e3a59.css": "86d833d3baed52ce9ee2c1642082591de7f8aadf"
+    "/styles.29f29562de7cabbf89de.css": "08404f354ef9b2865a435de1d7c0a9b2d9560047"
   },
   "navigationUrls": [
     {

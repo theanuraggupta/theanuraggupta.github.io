@@ -1,4 +1,0 @@
-export var APPLICATION_CONSTANTS = {
-    'about': "<h4><em>Hello there,</em> my name is</h4>\n    <h2>Anurag Gupta</h2>\n    <p>I\u2019m a 26 year old enthusiastic UI developer with <span class=\"abouthighlight\">three and half years of IT experience.</span>&nbsp;Specialising in web design, front end code and frameworks of javascripts.</p>\n    <p>Over the years, I have found a new curiosity for anything digital and making technology easy to use and accessible to everyone (feels good to do good).</p>\n    <p>Feel free to <a class=\"highlight\" href=\"mailto:email@anuraggupta.in?Subject=Hello%20Anurag\">contact</a> me here.</p>"
-};
-//# sourceMappingURL=constants.js.map
