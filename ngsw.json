@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1567145506748,
+  "timestamp": 1567437186202,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -17,7 +17,7 @@
         "/polyfills.407a467dedb63cfdd103.js",
         "/runtime.3eb5ec718d80184f919f.js",
         "/scripts.bf8f92e2e60dbee00511.js",
-        "/styles.9d53dee08824b2541695.css"
+        "/styles.022398fd707e2cf8caf8.css"
       ],
       "patterns": []
     },
@@ -52,9 +52,9 @@
     "/assets/images/avatar.png": "87c94eda954da92b1f571c87ff42df9d58b8dafc",
     "/assets/styles/abstracts/_mixins.scss": "e9dda6d8f22b73a36aab2e0599bfcedb2464eb91",
     "/assets/styles/abstracts/_variables.scss": "97771d0b46807d43bdf1f343df797526a0e3fc55",
-    "/assets/styles/base/_base.scss": "9d74c61b371c7f12a0a0b53f07859cf75b8dcaac",
-    "/assets/styles/common.scss": "5f0eb3293b83e5f698859f57c99f9d9a5e8f5d3e",
-    "/assets/styles/components/_about.scss": "050409d11c63528e8ca9a5c42060c070145d77e3",
+    "/assets/styles/base/_base.scss": "2bd3a5ab0dd1038d1e9d637f337327fb7619f489",
+    "/assets/styles/common.scss": "c2d014def12f2c25308f4d883d72d44e2456b0f6",
+    "/assets/styles/components/_about.scss": "a98b3d19ec413e450fb3ee721fae9eb9f8ab02de",
     "/assets/styles/components/_main-header.scss": "4a9a8472f90d4db20971cf488dca5a8100eebff1",
     "/assets/styles/components/_posts.scss": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
     "/es2015-polyfills.4a4cfea0ce682043f4e9.js": "b7a81c61d32b0b12737f0c13f45973ba391cd7f9",
@@ -64,12 +64,12 @@
     "/fontawesome-webfont.af7ae505a9eed503f8b8.woff2": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c",
     "/fontawesome-webfont.b06871f281fee6b241d6.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
     "/fontawesome-webfont.fee66e712a8a08eef580.woff": "28b782240b3e76db824e12c02754a9731a167527",
-    "/index.html": "d0e4bc04f1c3e2a2da9bf1f0e9c017864416fa5e",
+    "/index.html": "0dae3bc391490a1a653c08b075d1dceb537d723f",
     "/main.0195596b3dac94bc04db.js": "6c8abf93863420269db14dfb94598f388c075777",
     "/polyfills.407a467dedb63cfdd103.js": "ffa449995bf2eba2ccd0a002417214f7eb75e7b5",
     "/runtime.3eb5ec718d80184f919f.js": "2f84df18fdd039d41e1e4d60740b014314ed26d8",
     "/scripts.bf8f92e2e60dbee00511.js": "74d7796953f4b475d957e6e2bb7083f1b7fdc380",
-    "/styles.9d53dee08824b2541695.css": "7d7386a8b048353d808c2a6882140e1b9fceed65"
+    "/styles.022398fd707e2cf8caf8.css": "e57adfec0cfefddf197728551053b8371dec9897"
   },
   "navigationUrls": [
     {
