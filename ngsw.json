@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1568753071289,
+  "timestamp": 1573038113655,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -8,16 +8,19 @@
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "/5.b427f0db3db8cfacd4ab.js",
-        "/6.544ee26dbe303dffd9ad.js",
-        "/es2015-polyfills.4a4cfea0ce682043f4e9.js",
+        "/6.7e83e8a00baedb016429.js",
+        "/7.c13ac4f5084330576b4b.js",
+        "/8.7b65a65aa592699581ba.js",
+        "/9.df0594e424d026e931d5.js",
+        "/common.c2927b17284b251c6b38.js",
+        "/es2015-polyfills.cf5c575b6ffb3f6bdfa6.js",
         "/favicon.ico",
         "/index.html",
-        "/main.0195596b3dac94bc04db.js",
-        "/polyfills.407a467dedb63cfdd103.js",
-        "/runtime.3eb5ec718d80184f919f.js",
+        "/main.e39ed00a9a594d755f28.js",
+        "/polyfills.ca948757f51b36d0d532.js",
+        "/runtime.77a4616ab28660c83436.js",
         "/scripts.bf8f92e2e60dbee00511.js",
-        "/styles.022398fd707e2cf8caf8.css"
+        "/styles.c1ff6fa1150122660801.css"
       ],
       "patterns": []
     },
@@ -34,42 +37,35 @@
         "/assets/styles/common.scss",
         "/assets/styles/components/_about.scss",
         "/assets/styles/components/_main-header.scss",
-        "/assets/styles/components/_posts.scss",
-        "/fontawesome-webfont.674f50d287a8c48dc19b.eot",
-        "/fontawesome-webfont.912ec66d7572ff821749.svg",
-        "/fontawesome-webfont.af7ae505a9eed503f8b8.woff2",
-        "/fontawesome-webfont.b06871f281fee6b241d6.ttf",
-        "/fontawesome-webfont.fee66e712a8a08eef580.woff"
+        "/assets/styles/components/_posts.scss"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/5.b427f0db3db8cfacd4ab.js": "6cd9da28cd1ee41597585aa070baac4cf6c21677",
-    "/6.544ee26dbe303dffd9ad.js": "39a3dc8b50bc435396fcb5ea68607a5111c03e98",
+    "/6.7e83e8a00baedb016429.js": "5ef849880d77644325867faea7a334ed1ffe4d33",
+    "/7.c13ac4f5084330576b4b.js": "5cb578ff25870ae974ff7f340818f5b633b87203",
+    "/8.7b65a65aa592699581ba.js": "9091f78d3b9230edc96c1e4a52bacd8beef5fcab",
+    "/9.df0594e424d026e931d5.js": "bf9644bdee333eca9357d79f47d5851e1a2d89b2",
     "/assets/constants/constants.ts": "5119e60c74196697c891841bcc1df1e377087672",
     "/assets/images/avatar.png": "87c94eda954da92b1f571c87ff42df9d58b8dafc",
     "/assets/styles/abstracts/_mixins.scss": "e9dda6d8f22b73a36aab2e0599bfcedb2464eb91",
     "/assets/styles/abstracts/_variables.scss": "97771d0b46807d43bdf1f343df797526a0e3fc55",
-    "/assets/styles/base/_base.scss": "2bd3a5ab0dd1038d1e9d637f337327fb7619f489",
-    "/assets/styles/common.scss": "c2d014def12f2c25308f4d883d72d44e2456b0f6",
+    "/assets/styles/base/_base.scss": "8a2d5598389c6326633aba59849b99a294d06d72",
+    "/assets/styles/common.scss": "5ecf88156bca9098864ad4fec37a890366bd1633",
     "/assets/styles/components/_about.scss": "a98b3d19ec413e450fb3ee721fae9eb9f8ab02de",
-    "/assets/styles/components/_main-header.scss": "4a9a8472f90d4db20971cf488dca5a8100eebff1",
+    "/assets/styles/components/_main-header.scss": "a0b631ec0df4d449a965508f84d2f4ea602d1cff",
     "/assets/styles/components/_posts.scss": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
-    "/es2015-polyfills.4a4cfea0ce682043f4e9.js": "b7a81c61d32b0b12737f0c13f45973ba391cd7f9",
+    "/common.c2927b17284b251c6b38.js": "8739126ecca3a234e3c115593ae385c53774a5bb",
+    "/es2015-polyfills.cf5c575b6ffb3f6bdfa6.js": "ddc4884f07efd3b0454e560ff8808c45a7fd49d0",
     "/favicon.ico": "54e70d251e94dde8c4438a1091f47c51307d9129",
-    "/fontawesome-webfont.674f50d287a8c48dc19b.eot": "d980c2ce873dc43af460d4d572d441304499f400",
-    "/fontawesome-webfont.912ec66d7572ff821749.svg": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed",
-    "/fontawesome-webfont.af7ae505a9eed503f8b8.woff2": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c",
-    "/fontawesome-webfont.b06871f281fee6b241d6.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
-    "/fontawesome-webfont.fee66e712a8a08eef580.woff": "28b782240b3e76db824e12c02754a9731a167527",
-    "/index.html": "a463a41f65fe3f3f362e77ff56f45354f68f3460",
-    "/main.0195596b3dac94bc04db.js": "6c8abf93863420269db14dfb94598f388c075777",
-    "/polyfills.407a467dedb63cfdd103.js": "ffa449995bf2eba2ccd0a002417214f7eb75e7b5",
-    "/runtime.3eb5ec718d80184f919f.js": "2f84df18fdd039d41e1e4d60740b014314ed26d8",
+    "/index.html": "701331f3ff00b5e2f6bb4a96c66700f42aafa1f5",
+    "/main.e39ed00a9a594d755f28.js": "df7d516262df041f2df33787d40953423026ac45",
+    "/polyfills.ca948757f51b36d0d532.js": "ef448ddee57ecea8f1f0157e9e684b2c871e2e39",
+    "/runtime.77a4616ab28660c83436.js": "913e871f5f610d44218d67f841b8d3b2374e849c",
     "/scripts.bf8f92e2e60dbee00511.js": "74d7796953f4b475d957e6e2bb7083f1b7fdc380",
-    "/styles.022398fd707e2cf8caf8.css": "e57adfec0cfefddf197728551053b8371dec9897"
+    "/styles.c1ff6fa1150122660801.css": "1bbad0d364571231c2503108280f649b4d9b8222"
   },
   "navigationUrls": [
     {
